@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1= title
+  p
+    for ch, index in channels
+      a(href="/channel/#{ch.key}") #{ch.name}
+      br
